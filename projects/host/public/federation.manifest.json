@@ -1,4 +1,5 @@
 {
 	"core": "http://localhost:7100/remoteEntry.json",
-	"products": "http://localhost:7300/remoteEntry.json"
+	"products": "http://localhost:7300/remoteEntry.json",
+	"dashboard": "http://localhost:7900/remoteEntry.json"
 }
