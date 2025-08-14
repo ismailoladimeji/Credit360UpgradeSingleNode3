@@ -15,4 +15,9 @@ export const routes: Routes = [
         path: 'products',
         loadComponent: ()=> loadRemoteModule('products','./Component').then(m=>m.AppComponent)
     }
+    ,
+        {
+        path: 'dashboard',
+        loadComponent: ()=> loadRemoteModule('dashboard','./Component').then(m=>m.AppComponent)
+    }
 ];
