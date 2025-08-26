@@ -1,0 +1,10 @@
+.datepicker{
+	z-index: 1060;
+}
+.datepicker--day-name{color: #1b00ff;}
+.datepicker--nav-action path{stroke: #1b00ff;}
+.datepicker--cell.-focus-, .datepicker--nav-title:hover, .datepicker--nav-action:hover{background: #e1e1f5; color: #1b00ff;}
+.datepicker--cell.-selected-{color: #ffffff;}
+.datepicker--time-current-hours:after, .datepicker--time-current-minutes:after{display: none;}
+.datepicker--time-current-hours, .datepicker--time-current-minutes{color: #1b00ff;}
+.datepicker-inline .datepicker{margin: 0 auto;}

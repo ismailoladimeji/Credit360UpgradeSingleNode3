@@ -1,0 +1,50 @@
+.faq-wrap{}
+.faq-wrap .card{
+	margin-bottom: 20px;
+	border: 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .08);
+	-moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .08);
+	box-shadow: 0px 0px 28px rgba(0, 0, 0, .08);
+}
+.faq-wrap .card-header{
+	background: #ffffff;
+	text-align: left;
+	border: 0;
+	padding: 0;
+}
+.faq-wrap .card-header .btn{
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 16px 40px 16px 16px;
+	position: relative;
+	white-space: normal;
+	color: #1b00ff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.faq-wrap .card-header .btn.collapsed{
+	color: #222222;
+}
+.faq-wrap .card-header .btn:after{
+	content: "\f209";
+	font-family: "Ionicons";
+	position: absolute;
+	right: 10px;
+	color: #1b00ff;
+	top: 16px;
+}
+.faq-wrap .card-header .btn.collapsed:after{
+	content: "\f218";
+}
+.faq-wrap .card-body{
+	padding-top: 0;
+}

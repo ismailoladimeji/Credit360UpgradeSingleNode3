@@ -1,0 +1,15 @@
+.breadcrumb{
+	background: none;
+	padding: 0.75rem 0;
+}
+.breadcrumb-item.active{
+	color: #1b00ff;
+	font-weight: 500;
+}
+.breadcrumb-item a{
+	color: #031e23;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+	font-family: "FontAwesome";
+	content: "\f105";
+}

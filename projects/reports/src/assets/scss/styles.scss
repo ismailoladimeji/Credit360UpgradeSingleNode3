@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Berry Angular Admin Template - Global Styles
+   ========================================================================== */
+@import "sass:map";
+@import "sass:color";
+@import "sass:math";
+
+
+@import "bootstrap/scss/functions";   // <-- defines _assert-ascending
+@import "bootstrap/scss/variables" ;   // <-- safe now, uses the mixins
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/variables-dark";
+
+/* Fonts (CSS must use @import url) */
+
+
+/* Theme presets and variables */
+@import "settings/color-variables";
+@import "settings/theme-variables";
+@import "settings/bootstrap-variables";
+
+/* Custom themes */
+@import "themes/generic";
+@import "themes/general";
+@import "themes/layouts/layouts";
+
+/* Components */
+@import "themes/components/components";
+
+/* Pages */
+@import "themes/pages/page";
+
+/* Customizer */
+@import "themes/customizer";
+
+@import "bootstrap/scss/bootstrap";
+
+
+@import url("@importfonts/tabler-icons.min.css");
+@import url("@importfonts/phosphor/duotone/style.css");
+@import url("@importfonts/berry/berry-icons.css");

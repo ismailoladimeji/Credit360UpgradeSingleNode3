@@ -1,1 +1,8 @@
-<p>header works!</p>
+<header class="pc-header coded-header">
+  <app-top-bar-logo [navCollapsed]="navCollapsed" (NavCollapse)="navCollapse()" />
+  <div class="header-wrapper">
+    <app-top-bar />
+    <app-settings-menu (NavCollapsedMob)="navCollapseMob()" />
+ 
+  </div>
+</header>

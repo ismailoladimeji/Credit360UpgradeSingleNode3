@@ -7,7 +7,7 @@ module.exports = withNativeFederation({
   exposes: {
     './Component': './projects/products/src/app/app.component.ts',
   },
-
+  filename: 'remoteEntry.js',
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
@@ -18,9 +18,16 @@ module.exports = withNativeFederation({
     'rxjs/testing',
     'rxjs/webSocket',
     // Add further packages you don't need at runtime
-  ]
+  ],
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0
-  
+
+  features: {
+    // New feature for more performance and avoiding
+    // issues with node libs. Comment this out to
+    // get the traditional behavior:
+    ignoreUnusedDeps: true
+  }
+
 });
