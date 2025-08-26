@@ -1,0 +1,13 @@
+.wizard-content .wizard>.actions>ul>li>a{
+	background-color: #1b00ff;
+	font-weight: 600;
+}
+.wizard-content .wizard>.actions>ul>li>a[href="#previous"]{
+	border-color: #1b00ff;
+	border-width: 2px;
+	color: #1b00ff;
+}
+.wizard-content .wizard>.actions>ul>li.disabled>a[href="#previous"]{
+	display: none;
+	border-color: #1b00ff;
+}

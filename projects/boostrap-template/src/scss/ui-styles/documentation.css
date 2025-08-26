@@ -1,0 +1,23 @@
+.documentation-wrap{
+	position: relative;
+	height: 100%;
+	padding-left: 300px;
+}
+.documentation-wrap .doc-sidebar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+	width: 300px;
+	height: 100%;
+}
+.doc-content-wrap{
+	padding: 30px;
+}
+.table-badge{
+	padding: 8px 20px;
+	font-size: 14px;
+	background: #1b00ff;
+	color: #ebecef;
+	font-weight: 500;
+}

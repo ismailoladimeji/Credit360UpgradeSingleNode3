@@ -1,0 +1,142 @@
+
+.table thead th{
+	font-weight: 600;
+	font-size: 15px;
+	border-bottom: 0;
+	padding-left: 1rem;
+}
+.table td, .table th{
+	vertical-align: middle;
+}
+.table td{
+	font-size: 14px;
+	font-weight: 500;
+	padding: 1rem
+}
+.table-striped tbody tr:nth-of-type(odd){background: #eaeef2;}
+
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd{
+	background: #ECF0F3 !important;
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
+	background: #ECF0F3 !important;
+}
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected, table.dataTable tbody tr.selected{
+	background-color: #181f48 !important;
+	color: #ffffff;
+}
+table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected{
+	background-color: #1b00ff !important;
+}
+/* datatable style */
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after{
+	font-family: "dropways";
+	font-size: 14px;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before{
+	content: "\eabb"
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
+	content: "\eaba";
+	right: 0.2em;
+}
+table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after{
+	color: #1b00ff;
+}
+table.dataTable>tbody>tr.child ul.dtr-details{
+	white-space: normal;
+}
+table.dataTable>tbody>tr.child ul.dtr-details .dtr-title{
+	display: block;
+}
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_paginate,
+.dataTables_length,
+div.dataTables_wrapper div.dataTables_filter,
+.dt-buttons{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.dt-checkbox{
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+.dt-checkbox input{
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+}
+.dt-checkbox span{
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #9e9e9e;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.dt-checkbox span:before{
+	content: "";
+	background: url(./assets/images/check-mark.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: -1px;
+	background-size: 12px 12px;
+	background-position: center center;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.dt-checkbox input:checked ~ span{
+	background: #1b00ff;
+	border-color: #1b00ff;
+	color: #ffffff;
+}
+.dt-checkbox input:checked ~ span:before{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	font-family:"FontAwesome";
+	background: transparent;
+	content: "\f107";
+	color: #444444;
+	font-size: 23px;
+	left: 7px;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+	top: 50%;
+	margin-top: -7px;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+	content: "\f106";
+	background: transparent;
+}

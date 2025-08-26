@@ -1,0 +1,165 @@
+.form-group{
+	margin-bottom: 20px;
+}
+.form-group > label{
+	font-weight: 500;
+	font-size: 14px;
+}
+.form-control, .custom-select, .custom-file-input{
+	font-family: 'Inter', sans-serif;
+	color: #131e22;
+	font-weight: 400;
+	height: 45px;
+	border-color: #d4d4d4;
+	letter-spacing: 0.035em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.form-control.form-control-sm{
+	height: 38px;
+}
+.form-control.form-control-line{
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-radius: 0;
+}
+.custom-file-label{
+	font-family: 'Inter', sans-serif;
+	color: #131e22;
+	font-weight: 400;
+	height: 45px;
+	padding-top: .475rem;
+	border-color: #d4d4d4;
+	letter-spacing: 0.035em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.custom-file-label::after{
+	height: 100%;
+	padding-top: .475rem;
+}
+textarea.form-control{
+	height: 180px;
+}
+.form-control:focus , .custom-select:focus, .custom-file-input:focus{
+	color: #131e22;
+	border-color: #1b00ff;
+	-webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .1);
+	box-shadow: 0px 0px 28px rgba(0, 0, 0, .1);
+}
+.form-control.height-auto{height: auto;}
+.input-group{
+	margin-bottom: 25px;
+}
+.input-group.custom > .form-control, .input-group.custom > .custom-select{
+	width: 100%;
+}
+.input-group.custom > .form-control:not(:first-child), .input-group.custom > .custom-select:not(:first-child){
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	border-radius: 0.25rem;
+	padding-left: 50px;
+}
+.input-group.custom > .custom-select:not(:last-child), .input-group.custom > .form-control:not(:last-child){
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	border-radius: 0.25rem;
+	padding-right: 50px;
+}
+.input-group-prepend.custom{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 12;
+	height: 100%;
+}
+.input-group-append.custom{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 12;
+	height: 100%;
+}
+.input-group-text{
+	border: 0;
+	background: transparent;
+}
+.input-group-text i{
+	font-size: 20px;
+}
+.form-control:focus ~ .input-group-append .fa{
+	color: #1b00ff;
+}
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn{
+	height: 50px;
+	font-size: 16px;
+}
+
+
+/* ---------------- form validation class -------------*/
+.has-success{
+	color: #28a745;
+}
+.form-control-success{
+	border-color: #28a745;
+	background-image: url(./assets/images/check-mark-green.png);
+	background-repeat: no-repeat;
+	background-position: center right 10px;
+	background-size: 20px 20px;
+}
+.form-control-success:focus{
+	border-color: #28a745;
+	-webkit-box-shadow: 0px 0px 0px 1px #28a745;
+	-moz-box-shadow: 0px 0px 0px 1px #28a745;
+	box-shadow: 0px 0px 0px 1px #28a745;
+}
+
+.has-warning{
+	color: #ffc107;
+}
+.form-control-warning{
+	border-color: #ffc107;
+	background-image: url(./assets/images/caution-sign.png);
+	background-repeat: no-repeat;
+	background-position: center right 10px;
+	background-size: 20px 20px;
+}
+.form-control-warning:focus{
+	border-color: #ffc107;
+	-webkit-box-shadow: 0px 0px 0px 1px #ffc107;
+	-moz-box-shadow: 0px 0px 0px 1px #ffc107;
+	box-shadow: 0px 0px 0px 1px #ffc107;
+}
+
+.has-danger{
+	color: #dc3545;
+}
+.form-control-danger{
+	border-color: #dc3545;
+	background-image: url(./assets/images/cross.png);
+	background-repeat: no-repeat;
+	background-position: center right 10px;
+	background-size: 14px 14px;
+}
+.form-control-danger:focus{
+	border-color: #dc3545;
+	-webkit-box-shadow: 0px 0px 0px 1px #dc3545;
+	-moz-box-shadow: 0px 0px 0px 1px #dc3545;
+	box-shadow: 0px 0px 0px 1px #dc3545;
+}
+
+/* ---------------- form validation class -------------*/
+
+
+
+/*---------------- clock picker style -------------------*/
+.form-control.time-picker:disabled, .form-control.time-picker[readonly]{background: #ffffff;}
+.form-control.time-picker-default:disabled, .form-control.time-picker-default[readonly]{background: #ffffff;}
+
+
