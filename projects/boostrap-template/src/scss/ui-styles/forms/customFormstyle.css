@@ -1,0 +1,43 @@
+.custom-control{
+	padding-left: 35px;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+.custom-control-label{
+	cursor: pointer;
+	font-weight: 400;
+}
+.custom-control-label::before{
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	left: -30px;
+	background-color: transparent;
+	border: 2px solid #1b00ff;
+}
+.custom-control-label::after{
+	width: 20px;
+	height: 20px;
+	left: -30px;
+	background-size: 60%;
+	top: 2px;
+}
+.custom-control-input:focus ~ .custom-control-label::before{
+	box-shadow: none;
+	background-color: none;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+	background-color: #1b00ff;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+	background-image: url(./assets/images/check-mark.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+	background-color: #1b00ff;
+}
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
+	border: 2px solid rgba(0, 123, 255, 0);
+}
+

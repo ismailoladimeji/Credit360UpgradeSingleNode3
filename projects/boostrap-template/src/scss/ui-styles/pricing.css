@@ -1,0 +1,140 @@
+.pricing-table-wrap{}
+.pricing-table-wrap .card{
+	border: 0;
+	-webkit-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.20);
+}
+.pricing-table-wrap .btn{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.pricing-table-wrap .list-group-flush .list-group-item{
+	background: transparent;
+}
+
+.pricing-card{
+	text-align: center;
+}
+.pricing-card .pricing-icon{
+	padding-bottom: 30px;
+	text-align: center;
+}
+.pricing-card .pricing-icon img{
+	margin-top: -30px;
+}
+.pricing-card .price-title{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: #1b00ff;
+	letter-spacing: .150em;
+	padding-bottom: 30px;
+}
+.pricing-card .pricing-price{
+	font-size: 60px;
+	line-height: 1;
+	font-weight: 400;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	color: #1b00ff;
+}
+.pricing-card .pricing-price sub{
+	font-size: 16px;
+	font-weight: 400;
+	color: #fd486e;
+}
+.pricing-card .pricing-price sup{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fd486e;
+	top: 10px;
+	vertical-align: top;
+}
+.pricing-card .text{
+	padding-bottom: 30px;
+}
+.pricing-card .cta{
+	max-width: 170px;
+	margin: 0 auto;
+	-webkit-transform: translate(0px, 50%);
+	-moz-transform: translate(0px, 50%);
+	-o-transform: translate(0px, 50%);
+	-ms-transform: translate(0px, 50%);
+	transform: translate(0px, 50%);
+}
+.pricing-card .cta .btn{
+	display: block;
+	text-align: center;
+}
+
+.pricing-card-style2{
+	padding: 20px;
+}
+.pricing-card-style2 .pricing-card-header{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #f0f2f7;
+}
+.pricing-card-style2 .pricing-card-header .left{
+	width: 60%;
+}
+.pricing-card-style2 .pricing-card-header .left h5{
+	color: #1b00ff;
+	font-size: 18px;
+	font-weight: 700;
+}
+.pricing-card-style2 .pricing-card-header .left p{
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.pricing-card-style2 .pricing-card-header .right{
+	width: 40%;
+	text-align: right;
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.pricing-card-style2 .pricing-card-header .right span{
+	display: block;
+	font-size: 500;
+	font-size: 12px;
+}
+
+.pricing-card-style2 .pricing-card-body{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.pricing-points ul li{
+	padding: 0 30px 0 0;
+	margin-bottom: 20px;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+.pricing-points ul li:after{
+	content: "\f121";
+	font-family: Ionicons;
+	font-size: 18px;
+	line-height: 1;
+	color: #1061e4;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.pricing-card-style2 .cta{
+	max-width: 170px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.pricing-card-style2 .cta .btn{
+	display: block;
+	text-align: center;
+}

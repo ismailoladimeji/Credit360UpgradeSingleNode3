@@ -1,0 +1,18 @@
+
+.widget-style1{
+	padding: 10px;
+}
+.widget-style1 .widget-data{
+	width: calc(100% - 80px);
+	padding: 0 5px 0 15px;
+}
+.widget-style1 .progress-data{
+	width: 80px;
+}
+.widget-style1 .progress-data .apexcharts-canvas{
+	margin: 0 auto;
+}
+
+.widget-style2 .widget-data{
+	padding: 20px;
+}

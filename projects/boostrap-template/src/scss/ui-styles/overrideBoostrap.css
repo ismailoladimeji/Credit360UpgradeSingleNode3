@@ -1,0 +1,108 @@
+/*-------------------------------- boostrap select style ----------------*/
+
+.bootstrap-select .dropdown-toggle{
+	height: 45px;
+}
+.bootstrap-select .dropdown-toggle.btn-light{
+	background-color: transparent;
+	border-color: #d4d4d4;
+}
+.bootstrap-select .dropdown-toggle.btn-light:not(:disabled):not(.disabled):active{
+	background-color: transparent;
+	border-color: #d4d4d4;
+}
+.bootstrap-select.btn-group .dropdown-menu.inner{
+	display: block;
+}
+.bootstrap-select .dropdown-toggle:focus{
+	outline: none !important;
+}
+.bootstrap-select .dropdown-header{
+	color: #222222;
+	font-weight: 700;
+	font-size: 15px;
+}
+.bootstrap-select .dropdown-menu li .dropdown-item:hover{
+	color: #1b00ff;
+}
+.bootstrap-select .dropdown-menu li .dropdown-item.active:hover{
+	background-color: #1b00ff;
+	color: #ffffff;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark{
+	top: 13px;
+}
+.bootstrap-select .bs-ok-default:after{
+	border-width: 0 2px 2px 0;
+}
+
+
+.bootstrap-select.btn-group .dropdown-menu li a{
+	display: block;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0.55rem 1rem;
+	color: #667f87;
+	font-family: 'Inter', sans-serif;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.bootstrap-select.btn-group .dropdown-menu li.divider{
+	border: 1px solid #eaeaea;
+}
+.bootstrap-select.btn-group .dropdown-menu li.selected a{
+	background: #e1e1f5;
+	color: #131e22;
+}
+.bootstrap-select.btn-group .dropdown-menu li.disabled a{
+	color: #cecece;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:hover{
+	background: #e1e1f5;
+	color: #131e22;
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.check-mark{
+	/* background: url(./assets/images/check-mark-green.png); */
+    background: url(../../assets/images/check-mark-green.png);
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+}
+
+
+.bootstrap-tagsinput .tag{
+	display: inline-block;
+	padding: 2px 6px;
+	margin: 2px;
+	font-size: 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+.label-info{
+	background-color: #009efb;
+}
+.bootstrap-tagsinput .label-info{
+	background: #1b00ff;
+}
+
+.bootstrap-touchspin .btn{
+	background: #1b00ff;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	justify-content: center;
+}
+.bootstrap-touchspin .input-group-btn-vertical .btn{
+	height: 52%;
+}
+
+.bootstrap-touchspin .bootstrap-touchspin-postfix,
+.bootstrap-touchspin .bootstrap-touchspin-prefix{
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}

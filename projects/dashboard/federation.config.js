@@ -5,7 +5,7 @@ module.exports = withNativeFederation({
   name: 'dashboard',
 
   exposes: {
-    './Component': './projects/dashboard/src/app/app.component.ts',
+    './Module': './projects/dashboard/src/app/app.remote-entry-module.ts',
   },
 
   shared: {
