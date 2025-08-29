@@ -6,9 +6,11 @@ import { NgApexchartsModule, ChartComponent, ApexOptions } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-bajaj-chart',
-  imports: [NgApexchartsModule],
   templateUrl: './bajaj-chart.component.html',
-  styleUrl: './bajaj-chart.component.scss'
+  styleUrl: './bajaj-chart.component.scss',
+  standalone: true,
+  imports: [NgApexchartsModule],
+
 })
 export class BajajChartComponent {
   // public props

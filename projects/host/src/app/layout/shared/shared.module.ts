@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { provideSweetAlert2 } from '@sweetalert2/ngx-sweetalert2';
 
 // project import
 import { CardComponent } from './components/card/card.component';
@@ -34,6 +35,9 @@ import { NgbDropdownModule, NgbNavModule, NgbModule, NgbCollapseModule } from '@
     NgbNavModule,
     NgbCollapseModule,
     NgScrollbarModule
+  ],
+    providers: [
+    provideSweetAlert2()
   ],
   declarations: []
 })

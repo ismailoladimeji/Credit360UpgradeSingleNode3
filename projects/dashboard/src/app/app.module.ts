@@ -8,10 +8,13 @@ import { AppRemoteModule } from './app.remote-entry-module';
 import { AppComponent } from './app.component';
 import { RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+// import { AlertPageComponent } from './pages/alert-page/alert-page.component';
 
 
 @NgModule({
   declarations: [
+
+    // AlertPageComponent
   ],
   imports: [
     BrowserModule,

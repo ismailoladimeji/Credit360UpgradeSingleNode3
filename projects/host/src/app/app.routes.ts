@@ -15,6 +15,7 @@ export const routes: Routes =[
         redirectTo: '/dashboard',
         pathMatch: 'full'
       },
+
     //    {
     //     path:'host',
     //     component: LayoutComponent
@@ -31,7 +32,14 @@ export const routes: Routes =[
         {
         path: 'dashboard',
         loadChildren: ()=> loadRemoteModule('dashboard','./Module').then(m=>m.AppRemoteModule)
-    }
+    },
+
+     {
+        path: 'workflow',
+        loadChildren: () =>
+          loadRemoteModule('workflow', './Module')
+            .then(m => m.AppRemoteModule)
+      }
     //   ,
     //   {
     //     path: 'default',
@@ -66,6 +74,6 @@ export const routes: Routes =[
 //     ]
 //   }
 
-   
+
 ]
 

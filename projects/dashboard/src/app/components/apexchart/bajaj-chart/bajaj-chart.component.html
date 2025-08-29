@@ -1,6 +1,6 @@
 <apx-chart
-  [series]="chartOptions.series"
-  [chart]="chartOptions.chart"
+  [series]="chartOptions.series ?? []"
+  [chart]="chartOptions.chart ?? { type: 'line' }"
   [dataLabels]="chartOptions.dataLabels"
   [plotOptions]="chartOptions.plotOptions"
   [responsive]="chartOptions.responsive"

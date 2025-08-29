@@ -30,7 +30,16 @@ export const NavigationItems: NavigationItem[] = [
         url: '/dashboard',
         icon: 'ti ti-dashboard',
         breadcrumbs: false
-      }
+      },
+        {
+        id: 'sweet',
+        title: 'sweet',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/dashboard/sweet',
+        icon: 'ti ti-dashboard',
+        breadcrumbs: false
+      },
     ]
   },
    {
@@ -50,16 +59,48 @@ export const NavigationItems: NavigationItem[] = [
             title: 'Setup',
             type: 'item',
             url: '/admin',
-            target: true,
-            breadcrumbs: false
+            target: false,
+            breadcrumbs: true
           },
           {
             id: 'user',
             title: 'user',
             type: 'item',
-            url: '/user',
-            target: true,
-            breadcrumbs: false
+            url: '/guest/dashboard',
+            target: false,
+            breadcrumbs: true
+          }
+        ]
+      }
+    ]
+  },
+    {
+    id: 'WorkFlow',
+    title: 'WorkFlow',
+    type: 'group',
+    icon: 'icon-navigation',
+    children: [
+      {
+        id: 'Setup',
+        title: 'Setup',
+        type: 'collapse',
+        icon: 'ti ti-key',
+        children: [
+          {
+            id: 'Create WorkFlow',
+            title: 'Create WorkFlow',
+            type: 'item',
+            url: '/workflow/createworkflow',
+            target: false,
+            breadcrumbs: true
+          },
+          {
+            id: 'Approve WorkFlow',
+            title: 'Approve WorkFlow',
+            type: 'item',
+            url: '/workflow/approveworkflow',
+            target: false,
+            breadcrumbs: true
           }
         ]
       }

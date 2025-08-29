@@ -337,7 +337,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^19.0.0", "@angular/common@^19.0.0 || ^20.0.0", "@angular/common@>=13.0.0", "@angular/common@>=19.0.0", "@angular/common@19.2.14":
+"@angular/common@^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0", "@angular/common@^19.0.0", "@angular/common@^19.0.0 || ^20.0.0", "@angular/common@>=13.0.0", "@angular/common@>=19.0.0", "@angular/common@19.2.14":
   version "19.2.14"
   resolved "https://registry.npmjs.org/@angular/common/-/common-19.2.14.tgz"
   integrity sha512-NcNklcuyqaTjOVGf7aru8APX9mjsnZ01gFZrn47BxHozhaR0EMRrotYQTdi8YdVjPkeYFYanVntSLfhyobq/jg==
@@ -365,7 +365,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^19.0.0", "@angular/core@^19.0.0 || ^20.0.0", "@angular/core@>=13.0.0", "@angular/core@>=19.0.0", "@angular/core@19.2.14":
+"@angular/core@^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0", "@angular/core@^19.0.0", "@angular/core@^19.0.0 || ^20.0.0", "@angular/core@>=13.0.0", "@angular/core@>=19.0.0", "@angular/core@19.2.14":
   version "19.2.14"
   resolved "https://registry.npmjs.org/@angular/core/-/core-19.2.14.tgz"
   integrity sha512-EVErpW9tGqJ/wNcAN3G/ErH8pHCJ8mM1E6bsJ8UJIpDTZkpqqYjBMtZS9YWH5n3KwUd1tAkAB2w8FK125AjDUQ==
@@ -2009,6 +2009,13 @@
     "@softarc/native-federation-runtime" "2.0.13"
     json5 "^2.2.0"
     npmlog "^6.0.2"
+
+"@sweetalert2/ngx-sweetalert2@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.npmjs.org/@sweetalert2/ngx-sweetalert2/-/ngx-sweetalert2-14.0.0.tgz"
+  integrity sha512-DIJfiQ88iUmx/nA4u5RyYNbvk8AvR4D1bJTr+k2p9VCl5zfvgFzAzNlDFLptWnGbX2Kld3juYdttMw/mIZn5nA==
+  dependencies:
+    tslib "^2.0.0"
 
 "@tufjs/canonical-json@2.0.0":
   version "2.0.0"
@@ -7031,6 +7038,11 @@ svg.select.js@^3.0.1:
   integrity sha512-h5IS/hKkuVCbKSieR9uQCj9w+zLHoPh+ce19bBYyqF53g6mnPB8sAtIbe1s9dh2S2fCmYX2xel1Ln3PJBbK4kw==
   dependencies:
     svg.js "^2.6.5"
+
+sweetalert2@^11.22.4, sweetalert2@^11.22.5:
+  version "11.22.5"
+  resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.22.5.tgz"
+  integrity sha512-k9gb2M0n4b830FaWDmqaFQULIRvKixTbJOBkTN5KwRNIT8UxjGxusC9g67cj8sCxkJb9nVy2+PgyVd7vYK7cug==
 
 symbol-observable@4.0.0:
   version "4.0.0"
