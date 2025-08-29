@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
+import { ProductDashboardComponent } from './pages/product-dashboard/product-dashboard.component';
 import { AppComponent } from './app.component';
-import { loadRemoteModule } from '@angular-architects/native-federation';
+//import { loadRemoteModule } from '@angular-architects/native-federation';
 
 // export const routes: Routes = [
 //     { path: 'product-dash', component: ProductDashboardComponent },
@@ -10,19 +10,19 @@ import { loadRemoteModule } from '@angular-architects/native-federation';
 // ];
 
 
-export const routes: Routes =[
+export const productRouteArr: Routes =[
   {
     path: '',
-    component: AppComponent,
+   // component: AppComponent,
     children: [
       {
         path: '',
-        redirectTo: '',
+        redirectTo: 'products/product-dashboard',
         pathMatch: 'full'
       },
         {
-        path: 'product-dash',
-        loadComponent: ()=> loadRemoteModule('products','./Component').then((m:any)=>m.AppComponent)
+        path: 'products/product-dashboard',
+        loadComponent: ()=> import('./pages/product-dashboard/product-dashboard.component').then((m:any)=>m.ProductDashboardComponent)
     }
     ]
   },

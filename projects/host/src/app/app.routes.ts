@@ -28,6 +28,10 @@ export const routes: Routes =[
     //     loadComponent: ()=> loadRemoteModule('products','./Component').then((m:any)=>m.AppComponent)
     // }
     // ,
+     {
+        path: 'products',
+        loadChildren: ()=> loadRemoteModule('products','./Module').then(m=>m. AppRemoteModule)
+    },
         {
         path: 'dashboard',
         loadChildren: ()=> loadRemoteModule('dashboard','./Module').then(m=>m.AppRemoteModule)
