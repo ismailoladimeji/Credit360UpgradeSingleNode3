@@ -65,6 +65,23 @@ export const NavigationItems: NavigationItem[] = [
       }
     ]
   },
+    {
+    id: 'products',
+    title: 'Product-Dashboard',
+    type: 'group',
+    icon: 'icon-navigation',
+    children: [
+      {
+        id: 'default',
+        title: 'Product-Dashboard',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/products',
+        icon: 'ti ti-dashboard',
+        breadcrumbs: true
+      }
+    ]
+  },
   // {
   //   id: 'page',
   //   title: 'Pages',
