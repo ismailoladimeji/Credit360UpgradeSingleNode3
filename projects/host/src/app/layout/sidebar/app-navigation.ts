@@ -58,10 +58,9 @@ export const NavigationItems: NavigationItem[] = [
             id: 'setup',
             title: 'Setup',
             type: 'item',
-            url: '/admin',
-            target: false,
-            breadcrumbs: true
-
+            url: 'www.google.com',
+            target: true,
+            breadcrumbs: false
           },
           {
             id: 'user',
