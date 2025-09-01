@@ -44,7 +44,8 @@ export class LayoutComponent implements AfterViewInit {
     }
 
     this.windowWidth = window.innerWidth;
-    this.navCollapsed = this.windowWidth >= 1025 ? SettingsConfig.isCollapse_menu : false;
+    //this.navCollapsed = this.windowWidth >= 1025 ? SettingsConfig.isCollapse_menu : false;
+    this.navCollapsed =SettingsConfig.isCollapse_menu
     this.cdr.detectChanges();
   }
 

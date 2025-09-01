@@ -7,15 +7,16 @@ import { CommonModule } from '@angular/common';
 import { AppRemoteRoutingModule } from './app-remote-routing.module';
 
 
+
 @NgModule({
   declarations: [
         AppComponent
   ],
   imports: [
-// BrowserModule,
+    // BrowserModule,
     AppRemoteRoutingModule,
-    CommonModule
-  ],
+    CommonModule,
+],
   exports:[AppComponent],
   providers: [],
   bootstrap: [AppComponent]

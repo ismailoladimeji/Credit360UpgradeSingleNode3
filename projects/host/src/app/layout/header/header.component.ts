@@ -30,21 +30,30 @@ export class HeaderComponent {
   // Constructor
   constructor() {
     this.windowWidth = window.innerWidth;
-    this.navCollapsed = this.windowWidth >= 1025 ? SettingsConfig.isCollapse_menu : false;
+    //this.navCollapsed = this.windowWidth >= 1025 ? SettingsConfig.isCollapse_menu : false;
+     if (this.windowWidth < 1025) {
+       SettingsConfig.isCollapse_menu=true;
+    }
+    this.navCollapsed = SettingsConfig.isCollapse_menu;
+   
     this.navCollapsedMob = false;
   }
 
   // public method
   navCollapse() {
-    if (this.windowWidth >= 1025) {
+    //if (this.windowWidth >= 1025) {
       this.navCollapsed = !this.navCollapsed;
+      console.log("i fired header container")
       this.NavCollapse.emit();
-    }
+       
+    //}
   }
 
   navCollapseMob() {
-    if (this.windowWidth < 1025) {
+    //if (this.windowWidth < 1025) {
+     console.log("i fired drop down")
       this.NavCollapsedMob.emit();
-    }
+      
+    //}
   }
 }
