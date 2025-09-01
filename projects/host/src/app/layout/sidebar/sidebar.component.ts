@@ -25,9 +25,11 @@ export class SidebarComponent {
 
   // public method
   navCollapseMob() {
-    if (this.windowWidth < 1025) {
+    //if (this.windowWidth < 1025) {
+     console.log("i fired sidebar")
       this.NavCollapsedMob.emit();
-    }
+     
+    //}
   }
 
   navSubmenuCollapse() {

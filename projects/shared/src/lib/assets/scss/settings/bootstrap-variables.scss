@@ -6,7 +6,7 @@
 // Color System of Berry
 
 // BLUE Primary Color
-$newThemecolor: green;
+$newThemecolor: grey;
 $blue-700: #1c76da;
 $purple-500: #673ab7;
 $purple-700: #542ca7;
@@ -33,7 +33,7 @@ $colors: (
 );
 
 $primary: $blue; // change
-$secondary: $newThemecolor; // change
+$secondary:$newThemecolor; //$newThemecolor; // change
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
