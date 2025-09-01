@@ -61,6 +61,7 @@ export const NavigationItems: NavigationItem[] = [
             url: '/admin',
             target: false,
             breadcrumbs: true
+
           },
           {
             id: 'user',
