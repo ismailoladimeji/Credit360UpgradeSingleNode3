@@ -329,7 +329,6 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-
 "@angular/common@19.2.14":
   version "19.2.14"
   resolved "https://registry.npmjs.org/@angular/common/-/common-19.2.14.tgz"
@@ -357,7 +356,6 @@
   integrity sha512-ZqJDYOdhgKpVGNq3+n/Gbxma8DVYElDsoRe0tvNtjkWBVdaOxdZZUqmJ3kdCBsqD/aqTRvRBu0KGo9s2fCChkA==
   dependencies:
     tslib "^2.3.0"
-
 
 "@angular/core@19.2.14":
   version "19.2.14"
@@ -7514,7 +7512,7 @@ svg.select.js@^3.0.1:
   dependencies:
     svg.js "^2.6.5"
 
-sweetalert2@^11.22.4, sweetalert2@^11.22.5:
+sweetalert2@^11.22.5:
   version "11.22.5"
   resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.22.5.tgz"
   integrity sha512-k9gb2M0n4b830FaWDmqaFQULIRvKixTbJOBkTN5KwRNIT8UxjGxusC9g67cj8sCxkJb9nVy2+PgyVd7vYK7cug==
