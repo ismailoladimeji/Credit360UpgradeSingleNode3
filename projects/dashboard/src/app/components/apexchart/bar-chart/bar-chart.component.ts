@@ -6,9 +6,10 @@ import { NgApexchartsModule, ChartComponent, ApexOptions } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-bar-chart',
-  imports: [NgApexchartsModule],
   templateUrl: './bar-chart.component.html',
-  styleUrl: './bar-chart.component.scss'
+  styleUrl: './bar-chart.component.scss',
+  standalone: true,
+  imports: [NgApexchartsModule],
 })
 export class BarChartComponent {
   // public props

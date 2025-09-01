@@ -1,4 +1,5 @@
 {
 	"dashboard": "http://localhost:7900/remoteEntry.json",
+  	"workflow": "http://localhost:8000/remoteEntry.json",
 	"products": "http://localhost:7101/remoteEntry.json"
 }

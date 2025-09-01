@@ -1,0 +1,16 @@
+.swal-confirm, .swal-cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.swal-confirm { background: #0d6efd; color: #fff; }
+.swal-confirm:hover { opacity: .9; }
+
+.swal-cancel  { background: #6c757d; color: #fff; margin-right: .5rem; }
+.swal-cancel:hover { opacity: .9; }

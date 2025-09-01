@@ -35,6 +35,7 @@ import { NgbDropdownModule, NgbNavModule, NgbModule, NgbCollapseModule } from '@
     NgbCollapseModule,
     NgScrollbarModule
   ],
+
   declarations: []
 })
 export class SharedModule {}

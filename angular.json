@@ -412,7 +412,7 @@
 								"output": "/assets"
 							}
 						],
-							"stylePreprocessorOptions": {
+						"stylePreprocessorOptions": {
 							"includePaths": [
 								"projects/shared/src/assets/scss"
 							]
@@ -738,6 +738,142 @@
 							"projects/shared/**/*.html"
 						],
 						"eslintConfig": "projects/shared/eslint.config.mjs"
+					}
+				}
+			}
+		},
+		"workflow": {
+			"projectType": "application",
+			"schematics": {
+				"@schematics/angular:component": {
+					"standalone": false
+				},
+				"@schematics/angular:directive": {
+					"standalone": false
+				},
+				"@schematics/angular:pipe": {
+					"standalone": false
+				}
+			},
+			"root": "projects/workflow",
+			"sourceRoot": "projects/workflow/src",
+			"prefix": "app",
+			"architect": {
+				"build": {
+					"builder": "@angular-architects/native-federation:build",
+					"options": {},
+					"configurations": {
+						"production": {
+							"target": "workflow:esbuild:production"
+						},
+						"development": {
+							"target": "workflow:esbuild:development",
+							"dev": true
+						}
+					},
+					"defaultConfiguration": "production"
+				},
+				"serve": {
+					"builder": "@angular-architects/native-federation:build",
+					"options": {
+						"target": "workflow:serve-original:development",
+						"rebuildDelay": 0,
+						"dev": true,
+						"port": 0
+					}
+				},
+				"extract-i18n": {
+					"builder": "@angular-devkit/build-angular:extract-i18n"
+				},
+				"test": {
+					"builder": "@angular-devkit/build-angular:karma",
+					"options": {
+						"polyfills": [
+							"zone.js",
+							"zone.js/testing"
+						],
+						"tsConfig": "projects/workflow/tsconfig.spec.json",
+						"assets": [
+							{
+								"glob": "**/*",
+								"input": "projects/workflow/public"
+							}
+						],
+						"styles": [
+							"projects/workflow/src/styles.css"
+						],
+						"scripts": []
+					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"lintFilePatterns": [
+							"projects/workflow/**/*.ts",
+							"projects/workflow/**/*.html"
+						],
+						"eslintConfig": "projects/workflow/eslint.config.js"
+					}
+				},
+				"esbuild": {
+					"builder": "@angular-devkit/build-angular:application",
+					"options": {
+						"outputPath": "dist/workflow",
+						"index": "projects/workflow/src/index.html",
+						"browser": "projects/workflow/src/main.ts",
+						"polyfills": [
+							"zone.js",
+							"es-module-shims"
+						],
+						"tsConfig": "projects/workflow/tsconfig.app.json",
+						"assets": [
+							{
+								"glob": "**/*",
+								"input": "projects/workflow/public"
+							}
+						],
+						"styles": [
+							"projects/workflow/src/styles.css"
+						],
+						"scripts": []
+					},
+					"configurations": {
+						"production": {
+							"budgets": [
+								{
+									"type": "initial",
+									"maximumWarning": "500kB",
+									"maximumError": "1MB"
+								},
+								{
+									"type": "anyComponentStyle",
+									"maximumWarning": "4kB",
+									"maximumError": "8kB"
+								}
+							],
+							"outputHashing": "all"
+						},
+						"development": {
+							"optimization": false,
+							"extractLicenses": false,
+							"sourceMap": true
+						}
+					},
+					"defaultConfiguration": "production"
+				},
+				"serve-original": {
+					"builder": "@angular-devkit/build-angular:dev-server",
+					"configurations": {
+						"production": {
+							"buildTarget": "workflow:esbuild:production"
+						},
+						"development": {
+							"buildTarget": "workflow:esbuild:development"
+						}
+					},
+					"defaultConfiguration": "development",
+					"options": {
+						"port": 8000
 					}
 				}
 			}

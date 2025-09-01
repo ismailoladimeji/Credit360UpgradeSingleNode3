@@ -1,0 +1,6 @@
+<swal #deleteSwal title="Are you sure?" text="You won’t be able to revert this!" icon="warning" [showCancelButton]="true"
+      confirmButtonText="Yes, delete it!" cancelButtonText="Cancel">
+</swal>
+
+<button (click)="deleteSwal.fire()">Delete</button>
+

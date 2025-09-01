@@ -14,6 +14,14 @@ export const routesArr: Routes = [
       {
         path: 'admin/dashboard',
         loadComponent: () => import('./pages/admin-dashboard/admin-dashboard.component').then((c) => c.AdminDashboardComponent)
+      },
+      {
+        path: 'guest/dashboard',
+        loadComponent: () => import('./pages/admin-dashboard/admin-dashboard.component').then((c) => c.AdminDashboardComponent)
+      },
+       {
+        path: 'sweet',
+        loadComponent: () => import('./pages/alert-page/alert-page.component').then((c) => c.AlertPageComponent)
       }
     ]
   },
