@@ -47,6 +47,7 @@ export class MenuItemComponent {
       }
     }
 
+
       if ((document.querySelector('app-navigation.coded-navbar') as HTMLDivElement)?.classList?.contains('mob-open')) {
 
       (document.querySelector('app-navigation.coded-navbar') as HTMLDivElement)?.classList?.remove('mob-open');
