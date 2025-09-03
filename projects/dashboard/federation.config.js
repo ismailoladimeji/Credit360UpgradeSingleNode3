@@ -12,6 +12,7 @@ module.exports = withNativeFederation({
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
 
+  
   skip: [
     'rxjs/ajax',
     'rxjs/fetch',
