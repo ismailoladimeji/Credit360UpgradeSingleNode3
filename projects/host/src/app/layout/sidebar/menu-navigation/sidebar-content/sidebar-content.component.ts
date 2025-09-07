@@ -46,11 +46,11 @@ export class SidebarContentComponent implements OnInit {
 
   // Life cycle events
   ngOnInit() {
-    if (this.windowWidth < 1025) {
+   // if (this.windowWidth < 1025) {
       setTimeout(() => {
         (document.querySelector('.coded-navbar') as HTMLDivElement).classList.add('menupos-static');
       }, 500);
-    }
+   // }
   }
 
   fireOutClick() {

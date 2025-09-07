@@ -28,10 +28,12 @@ export class TopBarLogoComponent {
 
   // public method
   navCollapse() {
-    if (this.windowWidth >= 1025) {
+    //if (this.windowWidth >= 1025) {
       this.navCollapsed = !this.navCollapsed;
+      console.log("i fired top logo")
       this.NavCollapse.emit();
-    }
+ 
+    //}
   }
 
   returnToHome() {

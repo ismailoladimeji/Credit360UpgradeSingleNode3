@@ -85,9 +85,10 @@
 
 @media (max-width: 1024px) {
   .pc-sidebar {
-    left: -#{$sidebar-width};
+    left: 0;
+    // -#{$sidebar-width};
     box-shadow: none;
-    top: 0;
+    top: 60px;
     transition: all 0.15s ease-in-out;
 
     &.mob-open {
@@ -95,8 +96,8 @@
       box-shadow: $sidebar-shadow;
 
       .navbar-wrapper {
-        position: relative;
-        z-index: 5;
+        position: fixed;
+        z-index: 1025;
         background: inherit;
       }
     }
